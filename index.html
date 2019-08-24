@@ -25,8 +25,217 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+					<textarea data-template>
+						# The future has two waves
+						
+						Preview and lookback on commodity Freifunk routers
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Overview
+						 - Recommendations
+						 - Available Hardware
+						 - How to deal with deprecated devices
+						 - Actions you can do as a local community
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## How we recommended
+						 - Cheapest choice described as "Entry-level"
+						   - What does entry-level mean?
+						 - Why should an operator choose a specific hardware?
+						 - VPN perfomrance the only measurement? 
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## How we recommended
+						 - Cheapest choice described as "Entry-level"
+						   - What does entry-level mean?
+						 - Why should an operator choose a specific hardware?
+						 - VPN perfomrance the only measurement? 
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## How we want to recommend
+						 - Operator should be able to make educated decisions
+						 - We lay out which points are important t omake this decisions
+						 - We assist if the operator has questions about his decision
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## What was recommended
+						 - MIPS single-core
+						   - Slow compared to e.g. PPC / ARM
+						 - Mostly 2.4GHz single-band
+						   - Congestion in citites is very bad
+						 - One primary hardware-vendor
+						   - Not desirable, as lock-out can happen any time
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## What do we want to recommend
+						 - Fast CPU
+						   - Gives room for additional services
+						 - Dualband WiFi
+						   - Making use of wider channels & less Congestion
+						 - Flexible choice on hardware-vendors
+						   - Redundancy in case of "Revision-Bingo"
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Qualcomm IPQ40xx
+						 - 4C/4T ARMv7
+						 - Usually 256M RAM / 16-32M SPI Flash
+						 - Two Integrated WiFi radios
+						## MediaTek MT7621
+						 - 2C/4T MIPS
+						 - Usually 128M RAM / 16M SPI Flash
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Qualcomm IPQ40xx
+						 - 2T2R 802.11ac Wave 2 on 2.4GHz (only IPQ40x9)
+						 - 2T2R 802.11ac Wave 2 on 5GHz
+						## MediaTek MT7621
+						 - 2T2R 802.11n on 2.4GHz (MT7603)
+						 - 2T2R 802.11ac Wave 1 on 5GHz (MT7612)
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Observed Improvements
+						 - Wireless throughput
+						   - 100 Mbit/s increased WiFi throughput (AVM 4040 compared to Archer C7)
+						 - Tunnel performance
+						   - Double the throughput when using fastd as tunnel protocol
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Expected cost
+						 - Around 50€ to 70€ new depending on the exact model
+						 - Most reasonable choice 
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Cheaper options
+						 - MediaTek MT7628 & MediaTek MT7612
+						   - Single Core MIPS
+						   - 2T2R WiSoC
+						   - 2T2R 5GHz 802.11ac Wave 1
+						   - 64M RAM
+						   - 8M/16M Flash
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Drawbacks
+						 - No CPU improvement
+						 - 64M rather limited in terms of longevity
+						   - Dualband
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Expected cost
+						 - Around 25€ to 60€ new depending on the exact model
+						 - Can be the better suited option depending on the use-case
+						   - Outdoor, Ceiling-Mount
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Making recommendations
+						 - Hard to predict the future
+						   - Unforseen problems can arise
+						 - Should remain operational for the next 5 years
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Making recommendations
+						![](images/recommendations_indoor.png)
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Making recommendations
+						![](images/recommendations_outdoor.png)
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Making recommendations
+						![](images/recommendations_cheap.png)
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Deprecated devices
+						 - Insufficient by todays standard
+						   - 4M Flash
+						   - 32M RAM
+						 - Remaining support is unclear
+						 - Primary base for many communities
+						 - However, first communities started active phase-out
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Upgrading flash and RAM
+						 - Can fix stability issues
+						 - No support in upstream projects
+						 - Wireless limitations remain
+						 - Operators should be aware of the consequences
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Replacing devices with new devices
+						 - If chosen wisely, long-term benefit
+						   - Getting ready for the next 5+years
+						 - Devices might not be suitable in terms of mounting etc.
+						 - Costly
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Replacing with retired business access-points
+						 - Most have more than enough ram and flash
+						 - Sometimes really fast processor
+						 - Even 802.11ac gear can be found for cheap or even free
+						 - Often use on OpenWrt already
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Replacing with retired enterprise access-points 
+						 - Often just relabled/repackaged ODM boards
+						   - Watchguard, Fortinet, Sophos, Riverbed, devolo
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## What to do
+						 - Treat the operator as competent enough to let him pick his hardware 
+						   - Assist him in doing so
+						 - Trust the operator to do the installation process
+						   - Providing documentation is key
+						 - Freifunk is a long-term project, no one-shot
+						   - Hardware depends on use-case
+						     - no "one-size-fits-all"
+					</textarea>
+				</section>
 			</div>
 		</div>
 
